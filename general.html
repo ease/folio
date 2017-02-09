@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<meta name="description" content="Simple online portfolio">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.elearning'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div class="info-wrapper">
+		
+		<p>Hello Everyone! I am Denis and this is my online E-learning portfolio hosted on Amazon S3. Click on an image to enter the given course.</a></p>
+	</div>
+</div>	
+
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<!--<li><span class="filter active" data-filter=".elearning, .design">All</span></li>-->
+			<li><span class="filter" data-filter=".elearning">E-learning</span></li>
+			<li><span class="filter" data-filter=".design">Photoshop</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio elearning" data-cat="elearning" 
+                target="_blank"></a>
+				<div class="portfolio-wrapper">	
+                    <a href="http://denisportfolio.s3.amazonaws.com/Lufthansa-Company-Guide/story.html" target="_blank">
+					<img src="img/portfolios/elearning/1.png" alt="" </a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lufthansa Company Guide</a>
+							<span class="text-category">Articulate Storyline 2 | Adobe Photoshop</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+            
+			<div class="portfolio elearning" data-cat="elearning">
+				<div class="portfolio-wrapper">
+                    <a href="http://denisportfolio.s3.amazonaws.com/OLX-demo/story.html" target="_blank">
+					<img src="img/portfolios/elearning/2.png" alt="" </a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">OLX LMS Introduction</a>
+							<span class="text-category">Articulate Storyline 2 | Adobe Photoshop</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+            
+                 
+            <div class="portfolio elearning" data-cat="elearning">
+				<div class="portfolio-wrapper">	
+                    <a href="http://denisportfolio.s3.amazonaws.com/Puzzle/story.html" target="_blank">
+					<img src="img/portfolios/elearning/3.jpg" alt="" </a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Puzzle Game 3D</a>
+							<span class="text-category">Articulate Storyline 2 | Adobe Photoshop</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+                
+             <div class="portfolio elearning" data-cat="elearning">
+				<div class="portfolio-wrapper">	
+                    <a href="http://denisportfolio.s3.amazonaws.com/Puzzle-Game/story.html" target="_blank">
+					<img src="img/portfolios/elearning/4.jpg" alt="" </a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Puzzle Game 2D</a>
+							<span class="text-category">Articulate Storyline 2 | Adobe Photoshop</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+           <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">		
+                    <a href="https://goo.gl/DV1awD" target="_blank">
+					<img src="img/portfolios/design/click.png" alt="" </a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Click to see slideshow for all images</a>
+							<span class="text-category">Opens in new tab</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+                            
+                 
+			<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/1.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/2.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+						<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/3.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+												
+			
+			<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/4.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+		
+			<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/5.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+                 
+     			<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/6.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/7.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/8.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/9.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/14.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+                   
+               <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/12.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/10.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/11.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/blog1.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               	<div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/fb1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+                          <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/blog2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+                    
+                 <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/android-app-promo-blog.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+           
+               <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/blog4.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/iOS-vacancy.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+              
+              
+                              
+               <div class="portfolio design" data-cat="design">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/design/blog3.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Featured banner for OLX</a>
+							<span class="text-category">Adobe Photoshop & Illustrator</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+               
+               
+     
+            
+										
+			
+		</div>
+		
+	</div><!-- container -->
+
+</body>
+</html>
